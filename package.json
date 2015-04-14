@@ -1,0 +1,17 @@
+{
+  "name": "akveo",
+  "version": "1.0.0",
+  "description": "[Freelancer](http://startbootstrap.com/template-overviews/freelancer/) is a one page freelancer portfolio theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This theme features several content sections, a responsive portfolio grid with hover effects, full page portfolio item modals, and a working PHP contact form.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-less": "^3.0.2",
+    "gulp-plumber": "^1.0.0",
+    "gulp-watch": "^4.2.4"
+  }
+}
