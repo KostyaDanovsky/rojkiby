@@ -288,6 +288,9 @@ section.success a.active {
   font-size: 16px;
   color: #3e5771;
 }
+.featured-clients {
+  margin-top: 25px;
+}
 .things-icon {
   display: inline-block;
   width: 150px;
