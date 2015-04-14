@@ -15,6 +15,14 @@ a.active {
   color: #e1f5fe;
   outline: none;
 }
+.white-bg a,
+.white-bg a:hover,
+.white-bg a:focus,
+.white-bg a:active,
+.white-bg a.active {
+  color: #03A9F4;
+  outline: none;
+}
 h1,
 h2,
 h3,
@@ -251,6 +259,54 @@ section.success a.active {
 }
 #portfolio * {
   z-index: 2;
+}
+.hexagon-row {
+  margin-top: 25px;
+}
+.hexagon-row > div {
+  text-align: center;
+}
+.hexagon-row .hexagon {
+  display: inline-block;
+  background: url('../img/hexagon.svg') no-repeat;
+  background-position: center center;
+  background-size: contain;
+  width: 250px;
+  height: 250px;
+  padding: 15px 10px 0 10px;
+}
+.hexagon-row .hexagon .label {
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  margin-top: -15px;
+}
+.hexagon-row .hexagon-description {
+  padding: 15px 45px;
+  font-size: 16px;
+  color: #3e5771;
+}
+.things-icon {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.things-icon.satelite {
+  background-image: url('../img/things/satelite.svg');
+}
+.things-icon.gps {
+  background-image: url('../img/things/gps.svg');
+}
+.things-icon.submarine {
+  background-image: url('../img/things/submarine.svg');
+}
+.things-icon.tent {
+  background-image: url('../img/things/tent.svg');
 }
 @media (min-width: 767px) {
   #portfolio .portfolio-item {

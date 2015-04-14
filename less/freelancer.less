@@ -22,6 +22,17 @@ a.active {
 	outline: none;
 }
 
+.white-bg {
+    a,
+    a:hover,
+    a:focus,
+    a:active,
+    a.active {
+        color: #03A9F4;
+        outline: none;
+    }    
+}
+
 h1, h2, h3, h4, h5, h6 {
 	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
@@ -279,6 +290,57 @@ section.success {
     }
     * {
         z-index: 2;
+    }
+}
+
+.hexagon-row {
+    margin-top: 25px;
+    & > div {
+        text-align: center;
+    }
+
+    .hexagon {
+        display: inline-block;
+        background:url('../img/hexagon.svg') no-repeat;
+        background-position: center center;
+        background-size: contain;
+        width: 250px;
+        height: 250px;
+        padding: 15px 10px 0 10px;
+        .label {
+            font-size: 16px;
+            text-transform: uppercase;
+            text-align: center;
+            display: inline-block;
+            width: 100%;
+            margin-top: -15px;
+        }
+    }
+    .hexagon-description {
+        padding: 15px 45px;
+        font-size: 16px;
+        color: lighten(@brand-primary, 10%);
+    }
+}
+
+.things-icon {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    &.satelite {
+        background-image: url('../img/things/satelite.svg');
+    }
+    &.gps {
+        background-image: url('../img/things/gps.svg');    
+    }
+    &.submarine {
+        background-image: url('../img/things/submarine.svg');    
+    }
+    &.tent {
+        background-image: url('../img/things/tent.svg');    
     }
 }
 
