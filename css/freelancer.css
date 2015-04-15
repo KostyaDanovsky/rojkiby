@@ -267,14 +267,14 @@ section.success a.active {
   background-size: contain;
   background-repeat: no-repeat;
 }
-.things-icon.satelite {
-  background-image: url('../img/things/satelite.svg');
+.things-icon.consulting {
+  background-image: url('../img/things/consulting.svg');
 }
-.things-icon.gps {
-  background-image: url('../img/things/gps.svg');
+.things-icon.products {
+  background-image: url('../img/things/products.svg');
 }
-.things-icon.submarine {
-  background-image: url('../img/things/submarine.svg');
+.things-icon.opensource {
+  background-image: url('../img/things/opensource.svg');
 }
 .things-icon.tent {
   background-image: url('../img/things/tent.svg');
