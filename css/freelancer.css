@@ -259,6 +259,10 @@ section.success a.active {
 .featured-clients {
   margin-top: 45px;
 }
+.featured-clients > div a {
+  display: inline-block;
+  padding: 10px 0;
+}
 .things-icon {
   display: inline-block;
   width: 150px;
