@@ -43,6 +43,7 @@ $(function() {
 
                     //clear all fields
                     $('#contactForm').trigger("reset");
+                    $('#contactForm .floating-label-form-group-with-value').removeClass('floating-label-form-group-with-value');
                 },
                 error: function() {
                     // Fail message
@@ -53,6 +54,7 @@ $(function() {
                     $('#success > .alert-danger').append('</div>');
                     //clear all fields
                     $('#contactForm').trigger("reset");
+                    $('#contactForm .floating-label-form-group-with-value').removeClass('floating-label-form-group-with-value');
                 },
             })
         },

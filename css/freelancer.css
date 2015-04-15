@@ -2,6 +2,9 @@ body {
   overflow-x: hidden;
   color: #2c3e50;
 }
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset!important;
+}
 .jumbotron {
   background-color: #e1f5fe;
 }
@@ -334,7 +337,7 @@ section.success a.active {
   border-radius: 0;
   font-size: 1.5em;
   background: none;
-  box-shadow: none !important;
+  box-shadow: 0 0 0px 1000px white inset!important;
   resize: none;
 }
 .floating-label-form-group label {

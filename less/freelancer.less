@@ -6,6 +6,10 @@ body {
     color: @brand-primary;
 }
 
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset!important;
+}
+
 .jumbotron {
     background-color: @brand-success;
 }
@@ -377,7 +381,7 @@ section.success {
 	    border-radius: 0;
 	    font-size: 1.5em;
 	    background: none;
-	    box-shadow: none !important;
+	    box-shadow: 0 0 0px 1000px white inset!important;
 	    resize: none;
     }
     label {
