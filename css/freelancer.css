@@ -244,10 +244,17 @@ section.success a.active {
   width: 100%;
   margin-top: -15px;
 }
-.hexagon-row .hexagon-description {
+.picture-description {
   padding: 15px 45px;
   font-size: 16px;
+  box-sizing: border-box;
   color: #3e5771;
+}
+.picture-description .name {
+  display: inline-block;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 700;
 }
 .featured-clients {
   margin-top: 25px;
