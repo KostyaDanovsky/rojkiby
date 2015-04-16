@@ -160,6 +160,13 @@ header .btn-outline:focus {
     font-size: 1.75em;
   }
 }
+.navbar-brand {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.navbar-brand img {
+  height: 100%;
+}
 @media (min-width: 768px) {
   .navbar-fixed-top {
     padding: 25px 0;
@@ -177,7 +184,8 @@ header .btn-outline:focus {
     padding: 10px 0;
   }
   .navbar-fixed-top.navbar-shrink .navbar-brand {
-    font-size: 1.5em;
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
 }
 .navbar {
