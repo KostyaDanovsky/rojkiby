@@ -22,6 +22,10 @@ a.active {
   color: #e1f5fe;
   outline: none;
 }
+.full-img {
+  width: 100%;
+  height: 100%;
+}
 .white-bg a,
 .white-bg a:hover,
 .white-bg a:focus,
@@ -78,7 +82,6 @@ hr.star-primary:after {
 }
 header {
   text-align: center;
-  background: #e1f5fe;
   color: #2c3e50;
 }
 header .container {
