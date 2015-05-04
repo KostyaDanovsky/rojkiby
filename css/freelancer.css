@@ -223,6 +223,9 @@ section h2 {
   margin: 0;
   font-size: 3em;
 }
+.dark-bg {
+  background: #e1f5fe;
+}
 section.success {
   background: #e1f5fe;
 }
