@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: http://akveo.com/sitemap.xml
+Sitemap: http://rojki.by/sitemap.xml
