@@ -1,12 +1,12 @@
 body {
   overflow-x: hidden;
-  color: #2c3e50;
+  color: #2C3E50;
 }
 input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0px 1000px white inset!important;
 }
 .jumbotron {
-  background-color: #e1f5fe;
+  background-color: #E1F5FE;
 }
 p {
   font-size: 20px;
@@ -19,7 +19,7 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #e1f5fe;
+  color: #E1F5FE;
   outline: none;
 }
 .full-img {
@@ -67,22 +67,22 @@ hr.star-light {
   border-color: white;
 }
 hr.star-light:after {
-  background-color: #e1f5fe;
+  background-color: #E1F5FE;
   color: white;
 }
 hr.star-primary {
-  border-color: #2c3e50;
+  border-color: #2C3E50;
 }
 hr.star-primary:after {
   background-color: white;
-  color: #2c3e50;
+  color: #2C3E50;
 }
 .img-centered {
   margin: 0 auto;
 }
 header {
   text-align: center;
-  color: #2c3e50;
+  color: white;
 }
 header .container {
   padding-top: 100px;
@@ -113,7 +113,7 @@ header .intro-text .divider-inner {
 header .intro-text .divider-inner:before {
   content: '';
   width: 100%;
-  border-bottom: 3px solid #2c3e50;
+  border-bottom: 3px solid #2C3E50;
   position: absolute;
   top: 50%;
   left: 0;
@@ -131,25 +131,14 @@ header .intro-text .skills {
   font-size: 1.25em;
   font-weight: 300;
   padding: 10px 20px;
-  background-color: #e1f5fe;
   position: relative;
 }
 header .intro-text .skills .btn {
   margin-top: 0;
 }
 header .btn-outline {
-  color: #2c3e50;
-  border-color: #2c3e50;
-}
-header .btn-outline:hover,
-header .btn-outline:hover:focus {
-  background-color: #2c3e50;
   color: white;
-}
-header .btn-outline:focus {
-  background-color: transparent;
-  color: #2c3e50;
-  border-color: #2c3e50;
+  border-color: white;
 }
 @media (min-width: 768px) {
   header .container {
@@ -224,17 +213,47 @@ section h2 {
   font-size: 3em;
 }
 .dark-bg {
-  background: #e1f5fe;
+  background: #E1F5FE;
 }
+
+.picture-bg {
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.picture-bg:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+#reasons ul {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+#reasons ul li {
+  margin-bottom: 10px;
+}
+
+#about {
+  font-size: 18px;
+}
+
 section.success {
-  background: #e1f5fe;
+  background: #E1F5FE;
 }
 section.success a,
 section.success a:hover,
 section.success a:focus,
 section.success a:active,
 section.success a.active {
-  color: #2c3e50;
+  color: #2C3E50;
   outline: none;
 }
 @media (max-width: 767px) {
@@ -270,14 +289,14 @@ section.success a.active {
 }
 .picture-description {
   padding: 15px 45px;
-  font-size: 16px;
+  font-size: 22px;
   box-sizing: border-box;
   color: #3e5771;
 }
 .picture-description .name {
   display: inline-block;
   width: 100%;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 700;
 }
 .featured-clients {
@@ -311,6 +330,9 @@ section.success a.active {
   margin: 30px 0;
   text-align: center;
 }
+.row-description p {
+  font-size: 26px;
+}
 .profile-block {
   text-align: center;
 }
@@ -333,14 +355,6 @@ section.success a.active {
   background: transparent;
   transition: all 0.3s ease-in-out;
   margin-top: 15px;
-}
-.btn-outline:hover,
-.btn-outline:focus,
-.btn-outline:active,
-.btn-outline.active {
-  color: #e1f5fe;
-  background: white;
-  border: solid 2px white;
 }
 .floating-label-form-group {
   position: relative;
@@ -386,7 +400,7 @@ section.success a.active {
   opacity: 1;
 }
 .floating-label-form-group-with-focus label {
-  color: #2c3e50;
+  color: #2C3E50;
 }
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eeeeee;
@@ -399,7 +413,7 @@ footer h3 {
 }
 footer .footer-above {
   padding-top: 50px;
-  background-color: #2c3e50;
+  background-color: #2C3E50;
 }
 footer .footer-col {
   margin-bottom: 50px;
@@ -477,7 +491,7 @@ footer .footer-below {
   height: 75px;
   width: 1px;
   margin-left: 35px;
-  background-color: #2c3e50;
+  background-color: #2C3E50;
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   /* IE 9 */
@@ -488,7 +502,7 @@ footer .footer-below {
 .portfolio-modal .close-modal .lr .rl {
   height: 75px;
   width: 1px;
-  background-color: #2c3e50;
+  background-color: #2C3E50;
   transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   /* IE 9 */
