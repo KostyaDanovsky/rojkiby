@@ -1,6 +1,7 @@
 body {
   overflow-x: hidden;
   color: #2C3E50;
+  font-size: 20px;
 }
 input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0px 1000px white inset!important;
@@ -22,6 +23,17 @@ a.active {
   color: #E1F5FE;
   outline: none;
 }
+
+section a,
+section a:hover,
+section a:focus,
+section a:active,
+section a.active {
+  color: #2c3e50;
+  outline: none;
+  text-decoration: underline;
+}
+
 .full-img {
   width: 100%;
   height: 100%;
@@ -86,7 +98,7 @@ header {
 }
 header .container {
   padding-top: 100px;
-  padding-bottom: 500px;
+  padding-bottom: 300px;
 }
 header img {
   display: block;
@@ -143,10 +155,10 @@ header .btn-outline {
 @media (min-width: 768px) {
   header .container {
     padding-top: 200px;
-    padding-bottom: 500px;
+    padding-bottom: 300px;
   }
   header .intro-text .name {
-    font-size: 2.5em;
+    font-size: 3.5em;
   }
   header .intro-text .skills {
     font-size: 1.75em;
@@ -197,7 +209,6 @@ header .btn-outline {
 }
 .navbar .navbar-nav {
   letter-spacing: 1px;
-  margin-left: 290px;
 }
 .navbar .navbar-nav li a:focus {
   outline: none;
@@ -211,7 +222,7 @@ section {
 }
 section h2 {
   margin: 0;
-  font-size: 2em;
+  font-size: 3em;
 }
 .dark-bg {
   background: #E1F5FE;
@@ -247,12 +258,12 @@ section h2 {
 	background-image: none;
 }
 
-#reasons ul {
+ul {
   margin-top: 20px;
-  font-size: 18px;
+  font-size: 20px;
 }
 
-#reasons ul li {
+ul li {
   margin-bottom: 10px;
 }
 
@@ -344,6 +355,7 @@ section.success a.active {
 .row-description {
   margin: 30px 0;
   text-align: center;
+  font-size: 26px;
 }
 .row-description p {
   font-size: 26px;
@@ -531,4 +543,16 @@ footer .footer-below {
 }
 .socials-list a {
   color: #03A9F4;
+}
+
+.section-title {
+  margin-bottom: 30px;
+}
+
+.table tr, .table th, .table td {
+  border-color: #cccccc!important;
+}
+
+.table th {
+  border-top: 1px solid #cccccc!important;
 }
