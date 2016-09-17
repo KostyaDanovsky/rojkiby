@@ -244,19 +244,84 @@ section h2 {
   background-color: rgba(0,0,0,0.5);
 }
 
-.container .carousel-inner img {
-    height: 400px;
-    width: 400px;
+.container .carousel {
+  margin-top: 40px;
 }
 
 .container .carousel-caption {
-	color: black;
-	margin-left: 270px;
+  text-shadow: none;
+}
+
+.container .carousel-inner img {
+    height: 350px;
+    width: 500px;
+}
+
+.container .carousel-caption {
+  color: black;
+  margin-left: 320px;
+  text-align: left;
+  bottom: 50%;
+  transform: translateY(50%);
 }
 
 .container .carousel-control {
 	background-image: none;
 }
+
+.carousel-indicators {
+  margin-left: -8%;
+}
+
+  .carousel-indicators li {
+    border-color: rgba(0,0,0, 0.2);
+    background-color: transparent;
+  }
+
+    .carousel-indicators li.active {
+      background-color: rgba(0,0,0, 0.2);
+    }
+
+.carousel-control {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  opacity: 1;
+  top: 96px;
+  cursor: pointer;
+}
+
+  .carousel-control span {
+    position: relative;
+    display: block;
+  }
+
+    .carousel-control span:before {
+      position: absolute;
+      content: '';
+      height: 30px;
+      width: 30px;
+      border-top: 5px solid rgba(0,0,0, 0.2);
+      border-right: 5px solid rgba(0,0,0, 0.2);
+      top: 19px;
+      opacity: 0.7;
+    }
+
+.carousel-control.left {
+  left: -100px;
+}
+    .carousel-control.left span:before {
+      transform: rotate(-135deg);
+    }
+
+.carousel-control.right {
+  right: -50px;
+}
+    .carousel-control.right span:before {
+      transform: rotate(45deg);
+    }
+
+
 
 ul {
   margin-top: 20px;
