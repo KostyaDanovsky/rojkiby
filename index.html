@@ -89,6 +89,15 @@
             </div>
         </header>
 
+        <section id="catalog" class="white-bg">
+            <div class="container">
+                <h2 class="text-center section-title">Каталог</h2>
+                <div id="catalog-items" class="section-description">
+
+                </div>
+            </div>
+        </section>
+
         <!-- Reasons Grid Section -->
         <!--TODO: make less font due to there will be 10 li elements, or make 5 reasons only at all -->
         <section id="reasons" class="white-bg">
@@ -392,9 +401,31 @@
                 xobj.send(null);
             }
 
+            String.prototype.format = function () {
+                var s = this,
+                    i = arguments.length;
+                while (i--) {
+                    s = s.replace(new RegExp('\\{' + i + '\\}', 'gm'), arguments[i]);
+                }
+                return s;
+            };
+
             loadJSON(function(response) {
                 var catalog = JSON.parse(response);
+                var container = $('#catalog-items');
+
                 console.log('catalog', catalog);
+
+                catalog.forEach(function(product) {
+                    container.append(
+                        ('<div class="item">' +
+                            '<img src="img/catalog/{0}"/>' +
+                            '{1}' +
+                        '</div>')
+
+                        .format(product.img, product.price)
+                    )
+                });
             });
         </script>
 

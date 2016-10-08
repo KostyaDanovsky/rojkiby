@@ -651,3 +651,18 @@ footer .footer-below {
   text-align: center;
   font-size: 24px;
 }
+
+#catalog-items .item {
+  position: relative;
+  display: inline-block;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.15);
+  width: 350px;
+  padding: 20px;
+  margin: 10px;
+  float: left;
+}
+
+  #catalog-items .item img {
+    width: 100%;
+    max-height: 300px;
+  }
