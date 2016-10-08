@@ -252,9 +252,20 @@ section h2 {
   text-shadow: none;
 }
 
+.container .carousel-inner .img-container {
+  width: 500px;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+}
+
 .container .carousel-inner img {
-    height: 350px;
-    width: 500px;
+  position: absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
 }
 
 .container .carousel-caption {
