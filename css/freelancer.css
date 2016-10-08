@@ -282,15 +282,24 @@ section h2 {
 
 .carousel-indicators {
   margin-left: -8%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  left: 75%;
 }
 
   .carousel-indicators li {
-    border-color: rgba(0,0,0, 0.2);
-    background-color: transparent;
+    border-color: white;
+    background-color: white;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.15);
+    margin: 5px;
   }
 
     .carousel-indicators li.active {
-      background-color: rgba(0,0,0, 0.2);
+      background-color: white;
+      width: 16px;
+      height: 16px;
+      margin: 5px;
     }
 
 .carousel-control {
