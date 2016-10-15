@@ -54,6 +54,9 @@
                             <a href="#page-top"></a>
                         </li>
                         <li class="page-scroll">
+                            <a href="#catalog">Каталог</a>
+                        </li>
+                        <li class="page-scroll">
                             <a href="#reasons">Почему</a>
                         </li>
                         <li class="page-scroll">
@@ -420,10 +423,12 @@
                     container.append(
                         ('<div class="item">' +
                             '<img src="img/catalog/{0}"/>' +
-                            '{1}' +
+                            '<div class="size">{1}</div>' +
+                            '<div class="weight">{2}</div>' +
+                            '<div class="price">{3}</div>' +
                         '</div>')
 
-                        .format(product.img, product.price)
+                        .format(product.img, product.size, product.weight, product.price)
                     )
                 });
             });

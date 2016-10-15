@@ -663,6 +663,28 @@ footer .footer-below {
 }
 
   #catalog-items .item img {
-    width: 100%;
-    max-height: 300px;
+     width: 100%;
+     max-height: 300px;
+     margin-bottom: 20px;
+  }
+
+  #catalog-items .item > div {
+    display: inline-block;
+    float: left;
+  }
+
+  #catalog-items .item .size {
+    font-size: 16px;
+    padding-right: 15px;
+  }
+
+  #catalog-items .item .weight {
+    font-size: 16px;
+  }
+
+  #catalog-items .item .price {
+    float: right;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: -1px;
   }
