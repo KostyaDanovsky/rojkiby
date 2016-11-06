@@ -54,22 +54,22 @@
                             <a href="#page-top"></a>
                         </li>
                         <li class="page-scroll">
-                            <a href="#catalog">Каталог</a>
-                        </li>
-                        <li class="page-scroll">
                             <a href="#reasons">Почему</a>
                         </li>
                         <li class="page-scroll">
-                            <a href="#reviews">Отзывы</a>
+                            <a href="#catalog">Каталог</a>
                         </li>
                         <li class="page-scroll">
                             <a href="#order">Заказать</a>
                         </li>
                         <li class="page-scroll">
+                            <a href="#request">Заявка</a>
+                        </li>
+                        <li class="page-scroll">
                             <a href="#delivery">Доставка</a>
                         </li>
                         <li class="page-scroll">
-                            <a href="#request">Заявка</a>
+                            <a href="#reviews">Отзывы</a>
                         </li>
                     </ul>
                 </div>
@@ -92,18 +92,7 @@
             </div>
         </header>
 
-        <section id="catalog" class="white-bg">
-            <div class="container">
-                <h2 class="text-center section-title">Каталог</h2>
-                <div id="catalog-items" class="section-description">
-
-                </div>
-            </div>
-        </section>
-
-        <!-- Reasons Grid Section -->
-        <!--TODO: make less font due to there will be 10 li elements, or make 5 reasons only at all -->
-        <section id="reasons" class="white-bg">
+        <section id="reasons" class="success">
             <div class="container">
                 <h2 class="text-center section-title">Почему именно Рога?</h2>
                 <div class="row-description">
@@ -147,7 +136,167 @@
             </div>
         </section>
 
-        <section id="reviews" class="success">
+        <section id="catalog">
+            <div class="container">
+                <h2 class="text-center section-title">Каталог</h2>
+                <div id="catalog-items" class="section-description">
+
+                </div>
+            </div>
+        </section>
+
+        <section id="order" class="success">
+            <div class="container">
+                <h2 class="text-center">Как заказать</h2>
+                <p class="row-description">Для того чтобы заказать рожок необходимо:</p>
+                <ol>
+                    <li>
+                        По таблице подбора определить параметры рожка для вашей собаки в зависимости от ее веса
+                    </li>
+                    <li>
+                        В каталоге имеющегося товара выбрать понравившийся рожок
+                    </li>
+                    <li>
+                        В разделе <a href="#request">заявка</a> оформить заказ с указанием номера рожка, адреса, удобного времени доставки, телефона и вашего имени
+                    </li>
+                    <li>
+                        После того как администратор обработает заказ, он обязательно свяжется с вами
+                    </li>
+                </ol>
+
+                <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <th>Вес собаки</th>
+                        <th>Размер рога</th>
+                        <th>Вес рога</th>
+                        <th>Длина рога</th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <td>до 2 кг</td>
+                        <td>XS</td>
+                        <td>от 40 до 70 грамм</td>
+                        <td>10-15 см</td>
+                    </tr>
+                    <tr>
+                        <td>от 2 до 3 кг</td>
+                        <td>S</td>
+                        <td>от 70 до 120 грамм</td>
+                        <td>10-15 см</td>
+                    </tr>
+                    <tr>
+                        <td>от 5 до 15 кг</td>
+                        <td>M</td>
+                        <td>от 150 до 170 грамм</td>
+                        <td>15-12 см</td>
+                    </tr>
+                    <tr>
+                        <td>от 20 до 30 кг</td>
+                        <td>L</td>
+                        <td>от 200 до 300 грамм</td>
+                        <td>20-25 см</td>
+                    </tr>
+                    <tr>
+                        <td>от 30 до 50 кг</td>
+                        <td>XL</td>
+                        <td>от 300 до 500 грамм</td>
+                        <td>20-30 см</td>
+                    </tr>
+                    <tr>
+                        <td>от 50 кг и более</td>
+                        <td>XXL</td>
+                        <td>от 500 до 900 грамм</td>
+                        <td>25-35 см</td>
+                    </tr>
+                    </tbody>
+
+                </table>
+
+                <div class="section-description">
+                    Оставить заказ и уточнить любые вопросы можно у администратора по тел. <a href="callto:+375293785459">+375293785459</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="request">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2>Связаться с нами</h2>
+                    </div>
+                </div>
+                <div class="row row-description">
+                    <div class="col-lg-12 text-center">
+                        <p>Если вы хотите сделать заказ, вы можете это сделать прямо здесь.</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <form name="sentMessage" id="contactForm" novalidate>
+                            <div class="row control-group">
+                                <div class="form-group col-xs-12 floating-label-form-group controls">
+                                    <label>Ваше Имя</label>
+                                    <input type="text" class="form-control" placeholder="Имя" id="name" required data-validation-required-message="Пожалуйста введите ваше имя">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="row control-group">
+                                <div class="form-group col-xs-12 floating-label-form-group controls">
+                                    <label>Почта</label>
+                                    <input type="email" class="form-control" placeholder="Email" id="email" required data-validation-required-message="Пожалуйста введите ваш email адрес">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="row control-group">
+                                <div class="form-group col-xs-12 floating-label-form-group controls">
+                                    <label>Телефон</label>
+                                    <input type="tel" class="form-control" placeholder="Телефон" id="phone">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="row control-group">
+                                <div class="form-group col-xs-12 floating-label-form-group controls">
+                                    <label>Ваше Сообщение</label>
+                                    <textarea rows="5" class="form-control" placeholder="Сообщение" id="message" required data-validation-required-message="Пожалуйста введите ваше сообщение"></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <br>
+                            <div id="success"></div>
+                            <div class="row">
+                                <div class="form-group col-xs-12">
+                                    <button type="submit" class="btn btn-success btn-lg">Отправить</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="delivery" class="success">
+            <div class="container">
+                <h2 class="text-center section-title">Условия доставки</h2>
+                <p>
+                    Доставка по Минску осуществляется абсолютно бесплатно.
+                </p>
+                <p>
+                    Иначе сумма доставки высчитывается на сайте belpost.by. Доставка по информации "Белпочта" для РБ длится 1-4 дня, для России и стран СНГ - 6-14 дней. Если посылка не доходит до получателя, всю ответственность на себя берут rojki.by (мы высылаем Вам всю сумму обратно).
+                </p>
+                <p>
+                    Принимаются индивидуальные заказы на необходимый размер для Вашего питомца.
+                </p>
+                <p>
+                    Ждем Ваших заказов!!!
+                </p>
+            </div>
+        </section>
+
+        <section id="reviews">
             <div class="container">
                 <h2 class="text-center">Отзывы</h2>
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -226,100 +375,6 @@
                         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                         <span class="sr-only">Вперёд</span>
                     </a>
-                </div>
-            </div>
-        </section>
-
-
-        <section id="order">
-            <div class="container">
-                <h2 class="text-center">Как заказать</h2>
-                <p class="row-description">Для того чтобы заказать рожок необходимо:</p>
-                <ol>
-                    <li>
-                        По таблице подбора определить параметры рожка для вашей собаки в зависимости от ее веса
-                    </li>
-                    <li>
-                        В каталоге имеющегося товара выбрать понравившийся рожок
-                    </li>
-                    <li>
-                        В разделе <a href="#request">заявка</a> оформить заказ с указанием номера рожка, адреса, удобного времени доставки, телефона и вашего имени
-                    </li>
-                    <li>
-                        После того как администратор обработает заказ, он обязательно свяжется с вами
-                    </li>
-                </ol>
-                <div class="section-description">
-                    Оставить заказ и уточнить любые вопросы можно у администратора по тел. <a href="callto:+375293785459">+375293785459</a>
-                </div>
-            </div>
-        </section>
-
-        <section class="success" id="delivery">
-            <div class="container">
-                <h2 class="text-center section-title">Условия доставки</h2>
-                <p>
-                    Сумма доставки высчитывается на сайте belpost.by. Доставка по информации "Белпочта" для РБ длится 1-4 дня, для России и стран СНГ - 6-14 дней. Если посылка не доходит до получателя, всю ответственность на себя берут rojki.by (мы высылаем Вам всю сумму обратно). Ждем Ваших заказов!!!
-                </p>
-                <p>
-                    Размер и цена рожек определяется индивидуально в зависимости от веса собаки и пожеланий владельца питомца. 100 гр. рога - 7 руб. 30 коп. (или 73.000 неденоминированных бел. руб.). Принимаются индивидуальные заказы на необходимый размер для Вашего питомца!!!
-                </p>
-            </div>
-        </section>
-
-        <section id="request" class="white-bg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2>Связаться с нами</h2>
-                    </div>
-                </div>
-                <div class="row row-description">
-                    <div class="col-lg-12 text-center">
-                        <p>Если вы хотите сделать заказ, вы можете это сделать прямо здесь.</p>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <form name="sentMessage" id="contactForm" novalidate>
-                            <div class="row control-group">
-                                <div class="form-group col-xs-12 floating-label-form-group controls">
-                                    <label>Ваше Имя</label>
-                                    <input type="text" class="form-control" placeholder="Имя" id="name" required data-validation-required-message="Пожалуйста введите ваше имя">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="row control-group">
-                                <div class="form-group col-xs-12 floating-label-form-group controls">
-                                    <label>Почта</label>
-                                    <input type="email" class="form-control" placeholder="Email" id="email" required data-validation-required-message="Пожалуйста введите ваш email адрес">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="row control-group">
-                                <div class="form-group col-xs-12 floating-label-form-group controls">
-                                    <label>Телефон</label>
-                                    <input type="tel" class="form-control" placeholder="Телефон" id="phone">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="row control-group">
-                                <div class="form-group col-xs-12 floating-label-form-group controls">
-                                    <label>Ваше Сообщение</label>
-                                    <textarea rows="5" class="form-control" placeholder="Сообщение" id="message" required data-validation-required-message="Пожалуйста введите ваше сообщение"></textarea>
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <br>
-                            <div id="success"></div>
-                            <div class="row">
-                                <div class="form-group col-xs-12">
-                                    <button type="submit" class="btn btn-success btn-lg">Отправить</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
                 </div>
             </div>
         </section>

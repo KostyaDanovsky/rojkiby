@@ -688,3 +688,8 @@ footer .footer-below {
     font-weight: 600;
     margin-top: -1px;
   }
+
+#order table {
+  margin-top: 40px;
+  margin-bottom: 0;
+}
